@@ -8,7 +8,9 @@ In order to to extract a set of morphosyntactic words (word-forms with specific 
 ```
 python src/extract_morphosyntactic_words.py treebank.conllu lexicon.tsv
 ```
-with the path to your treebank in place of treebank.conllu.
+with the path to your treebank in place of treebank.conllu and
+a file name for the table which will contain the extracted morphosyntactic words
+in place of lexicon.tsv.
 
 The first column of the resulting table lexicon.tsv will contain existing morpheme segmentations
 from the treebank (taken from the MSeg attribute in the MISC column)
@@ -21,6 +23,5 @@ in the MISC column), run
 ```
 python src/add_segmentations.py treebank.conllu lexicon.tsv
 ```
-with the desired name of the updated treebank file in place of treebank.conllu.
-
-Any valid file name can be used for the table instead of lexicon.tsv.
+with the desired name of the updated treebank file in place of treebank.conllu
+and the name of the table with morphosyntactic words in place of lexicon.tsv.
