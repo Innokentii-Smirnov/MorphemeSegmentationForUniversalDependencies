@@ -21,4 +21,6 @@ in the MISC column), run
 ```
 python src/add_segmentations.py treebank.conllu lexicon.tsv
 ```
-with the desired full name of the updated treebank file in place of treebank.conllu.
+with the desired name of the updated treebank file in place of treebank.conllu.
+
+Any valid file name can be used for the table instead of lexicon.tsv.
